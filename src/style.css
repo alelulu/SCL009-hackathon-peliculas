@@ -1,0 +1,31 @@
+div#button3 {
+    position: absolute;
+    left: 15%;
+    right: 0;
+    top: 35%;
+    margin: 0 auto;
+    z-index: 9999999;
+}
+div#button6 {
+    position: absolute;
+    left: 85%;
+    right: 0;
+    top: 35%;
+    margin: 0 auto;
+    z-index: 9999999;
+}
+button.age-btn {
+    padding: 50px;
+    border-radius: 60px;
+}
+button.category-btn {
+    background-color: palevioletred;
+    padding: 50px;
+    border-radius: 60%;
+}
+img.category-img {
+    width: 100px;
+}
+div.carousel-item {
+    height: 250px;
+}
