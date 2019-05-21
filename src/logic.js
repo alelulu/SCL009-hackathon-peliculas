@@ -12,17 +12,26 @@ window.logic = {
   //Function to filter by age
   filterByAge: (arr, age) => {
     let ageArray = [];
+    
     ageArray = arr.filter(element => {
       return element.age <= age;
     })
+    
     return ageArray
   },
   
   //Function to filter by category
   filterByCategory: (arr, category) => {
-    let showCategory = arr.filter(element => {
-      return element.categories.includes(category)
-    })
+    console.log(arr)
+    if (category == 3) { //Para categoría general se devuelve array completo
+      return arr
+    }
+    let showCategory = []
+    arr.forEach(element => {
+      if (element.category == category) {
+        showCategory.push(element);
+      }
+    });
     return showCategory;
   }
 }
@@ -32,103 +41,99 @@ const MOVIES = {
   "movies": [
     {
       "id": "tt3121722",
-      "categories": [8],
+      "category": 5,
       "age": 3
     }, {
       "id": "tt2402500",
-      "categories": [7],
+      "category": 2,
       "age": 6
     }, {
       "id": "tt0063951",
-      "categories": [4],
-      "age": 3
-    }, {
-      "id": "tt0063951",
-      "categories": [4],
+      "category": 3,
       "age": 3
     }, {
       "id": "tt0381971",
-      "categories": [4, 2],
+      "category": 2,
       "age": 3
     }, {
       "id": "tt1236429",
-      "categories": [2],
+      "category": 2,
       "age": 3
     }, {
       "id": "tt3012540",
-      "categories": [1],
+      "category": 1,
       "age": 3
     }, {
       "id": "tt1105469",
-      "categories": [6, 4],
+      "category": 4,
       "age": 3
     }, {
       "id": "tt2948562",
-      "categories": [2, 7],
+      "category": 2,
       "age": 3
     }, {
       "id": "tt1710295",
-      "categories": [8, 2],
+      "category": 5,
       "age": 3
     }, {
       "id": "tt4549142",
-      "categories": [8],
+      "category": 5,
       "age": 6
     }, {
       "id": "tt0313033",
-      "categories": [1],
+      "category": 1,
       "age": 3
     }, {
       "id": "tt0784896",
-      "categories": [5],
+      "category": 4,
       "age": 3
     }, {
       "id": "tt2543472",
-      "categories": [8],
+      "category": 5,
       "age": 6
     }, {
       "id": "tt0249462",
-      "categories": [8],
+      "category": 5,
       "age": 6
     }, {
       "id": "tt0420437",
-      "categories": [8, 3],
+      "category": 5,
       "age": 3
     }, {
       "id": "tt1634859",
-      "categories": [8],
+      "category": 5,
       "age": 6
     }, {
       "id": "tt0262153",
-      "categories": [8],
+      "category": 5,
       "age": 3
     }, {
       "id": "tt2096673",
-      "categories": [8],
+      "category": 5,
       "age": 6
     }, {
       "id": "tt0775407",
-      "categories": [4, 8],
+      "category": 3,
       "age": 3
     }, {
       "id": "tt4716268",
-      "categories": [2],
+      "category": 2,
       "age": 3
     }, {
       "id": "tt0428803",
-      "categories": [2],
+      "category": 2,
       "age": 6
     }, {
       "id": "tt0052751",
-      "categories": [7],
+      "category": 2,
       "age": 6
     }, {
       "id": "tt0102316",
-      "categories": [4],
+      "category": 3,
       "age": 6
     }, {
       "id": "tt0376364",
-      "categories": [4, 2],
+      "category": 3,
       "age": 6
     }
   ]
@@ -144,31 +149,19 @@ const CATEGORIES = {
       "description": "Lorem"
     }, {
       "id": 2,
-      "name": "Ciencia",
+      "name": "Ciencia y Matemáticas",
       "description": "Lorem"
     }, {
       "id": 3,
-      "name": "Deporte",
-      "description": "Lorem"
-    }, {
-      "id": 4,
       "name": "General",
       "description": "Lorem"
     }, {
+      "id": 4,
+      "name": "lenguaje e Inglés",
+      "description": "Lorem"
+    }, {
       "id": 5,
-      "name": "Inglés",
-      "description": "Lorem"
-    }, {
-      "id": 6,
-      "name": "Lenguaje",
-      "description": "Lorem"
-    }, {
-      "id": 7,
-      "name": "Matemáticas",
-      "description": "Lorem"
-    }, {
-      "id": 8,
-      "name": "Socioemocional",
+      "name": "Socioemocional y Deporte",
       "description": "Lorem"
     }
   ]
