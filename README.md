@@ -100,4 +100,30 @@ app para jugar
 
 red social
 
+# Prototipo de Baja Fidelidad
+
+Primera aproximación a lo que podría ser nuestra aplicación. 
+
+![prototipo baja fidelidad](./src/img/prototipo-baja.png)
+
+### Testeo de Nuestro prototipo
+
+Una vez realizado nuestro prototipo de baja fidelidad, se realizó un testeo para recibir feedback.
+
+Nuestras conclusiones después de la primera iteración de diseño fueron las siguientes:
+
++ En la pagina de bienvenida en el sector del nav, dejar solo el logo, ya que segun los usuarios entrevistados, poner todas la información al principio provoca confusión.
+
++ En la página de Peliculas, las categorias deberían ir como botones, por que al ir el menú desplegable se esconde la información.
+
++ Las categorías de edad deberían tener un current que indique en que rango de edad esta situado el usuario.
+
+[Test de nuestro prototipo de baja fidelidad](https://www.youtube.com/watch?v=WkYLFteWyO0&feature=youtu.be)
+
+## Figma
+
+Mobile First
+
+
+
 
