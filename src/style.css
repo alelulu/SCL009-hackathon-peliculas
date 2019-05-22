@@ -18,6 +18,10 @@ button.age-btn {
     padding: 50px;
     border-radius: 60px;
 }
+img#img-to-style {
+    border-radius: 200px;
+    padding: 50px;
+}
 button.category-btn {
     background-color: palevioletred;
     padding: 50px;
