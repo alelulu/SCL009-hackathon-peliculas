@@ -132,8 +132,6 @@ Mobile First
 
 La version desktop del prototipado se realizo con las mejoras que se detectaron despues del primer testeo con usuarios.
 
-![version prototipo desktop]()
-
 [Ve nuestro figma](https://www.figma.com/file/ejqGH8hR1BIJ445QlBelb1Xc/EduKids?node-id=9%3A3)
 
 
@@ -152,6 +150,18 @@ Presentamos un esquema general del flujo que deberia tener un usuario al recorre
 Como herramienta principal de organización y visualización de avance ultizamos Trello.
 
 [En este enlace encontrarás nuestro Trello](https://trello.com/b/WNR9WCfJ/hackathon-squad-7)
+
+Las FE desarrollaron lógica de funciones e implementación del DOM, en conjunto se escogieron los colores para la guía de estilos. Encargada de UX desarrolla investigación de usuario.
+
+## Futuras Iteraciones
+
+Para futuras mejoras de nuestro producto, deseamos implementar un modal por pelicula con información detallada.
+
+Desarrollar testeo de usuario con mapa de calor.
+
+
+
+
 
 
 
