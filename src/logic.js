@@ -140,29 +140,30 @@ const MOVIES = {
 }
 window.MOVIES = MOVIES
 
+
 //Array of categories with its definition
 const CATEGORIES = {
   "categories": [
     {
       "id": 1,
       "name": "Arte",
-      "description": "Lorem"
+      "description": "Fomenta la actividad creativa y transformadora en tus niños, desarrollando su imaginación , abriendo su mente, perfeccionando su motricidad, coordinación y concentración"
     }, {
       "id": 2,
       "name": "Ciencia y Matemáticas",
-      "description": "Lorem"
+      "description": "Promueve el aprendizaje activo, demuestra que las ciencias son divertidas y atractivas favoreciendo la construcción de ideas e intereses en los niños. Empodera a tus hijos como seres capacitados para transformar el Mundo desde la ciencia"
     }, {
       "id": 3,
       "name": "General",
-      "description": "Lorem"
+      "description": "Si buscas pasar un buen momento de diversión y a la vez desarrollar diferentes habilidades en tus niños, esta es su sección!"
     }, {
       "id": 4,
       "name": "lenguaje e Inglés",
-      "description": "Lorem"
+      "description": "Mejora habilidades en el lenguaje como la expresión , creatividad, flexibilidad de la mente, capacidad de memoria y habilidades multitareas de tus hijos"
     }, {
       "id": 5,
       "name": "Socioemocional y Deporte",
-      "description": "Lorem"
+      "description": "Promueve la colaboración, el respeto , mejora habilidades motoras , ayuda al niño a superar la timidez, cumplir normas junto con  forjar valores para su presente y futuro "
     }
   ]
-}
+}   
