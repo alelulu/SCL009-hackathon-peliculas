@@ -11,42 +11,46 @@ let showMovies = (arr) => {
     .then((data) => {
       //el objeto de la api
       console.log(data)
-      let movieCards = document.getElementById("movie-card");
-      let movieBox = document.createElement("div")
-      movieBox.classList.add("row");
-      movieBox.classList.add("justify-content-center");
+      let movieBoxes = document.getElementById("boxes");
+      movieBoxes.classList.add("row");
+
       movieCard = document.createElement("div");
-      movieCard.classList.add("col-sm-6");
+     
+      movieCard.classList.add("movie-card")
+      movieCard.classList.add("col-sm-12");
       movieCard.classList.add("col-md-4");
-      movieCard.classList.add("col-lg-2");
-      let movieImgContainer = document.createElement("div");
-      movieImgContainer.classList.add("movie-img-container")
+      movieCard.classList.add("col-lg-4");
+      
+      let movieContainer = document.createElement("div");
+      movieContainer.classList.add("container")
+
       let movieImgRow = document.createElement("div")
       movieImgRow.classList.add("row")
       let movieImgCol = document.createElement("div")
-      movieImgCol.classList.add("col-6")
+      movieImgCol.classList.add("col-12")
       movieImgCol.classList.add("movie-img");
-      let movieTitleContainer = document.createElement("div");
-      movieTitleContainer.classList.add("movie-title-container")
+
       let movieTitleRow = document.createElement("div");
       movieTitleRow.classList.add("row");
       let movieTitleCol = document.createElement("div");
-      movieTitleCol.classList.add("col-6");
+      movieTitleCol.classList.add("col-12");
+      movieTitleCol.classList.add("movie-title-card")
+
       if (data.Poster != "N/A") {
-        movieImgCol.innerHTML += "<img id=\"img-to-style\" height=\"300\" width=\"300\" src=\""+data.Poster+"\" alt=\""+data.Title+"\">"
+        movieImgCol.innerHTML += "<img class=\"img-to-style\" src=\""+data.Poster+"\" alt=\""+data.Title+"\">"
         movieTitleCol.innerHTML += "<h6>\""+data.Title+"\"</h6>"
       }
       else {
-        movieCard.innerHTML += "<img height=\"100\" src=\"http://www.libreriacuesta.com/content/images/thumbs/default-image_550.png\" alt=\""+data.Title+"\">"
+        movieImgCol.innerHTML += "<img class=\"img-to-style\" src=\"http://www.libreriacuesta.com/content/images/thumbs/default-image_550.png\" alt=\""+data.Title+"\">"
+        movieTitleCol.innerHTML += "<h6>\""+data.Title+"\"</h6>"
       }
       movieImgRow.appendChild(movieImgCol);
-      movieImgContainer.appendChild(movieImgRow);
-      movieCard.appendChild(movieImgContainer);
-      movieImgRow.appendChild(movieTitleCol);
-      movieTitleContainer.appendChild(movieTitleRow);
-      movieCard.appendChild(movieTitleContainer);
-      movieBox.appendChild(movieCard)
-      movieCards.appendChild(movieCard);
+      movieContainer.appendChild(movieImgRow);
+
+      movieTitleRow.appendChild(movieTitleCol);
+      movieCard.appendChild(movieContainer);
+      movieContainer.appendChild(movieTitleRow);
+      movieBoxes.appendChild(movieCard)
     });
   })
 }

@@ -47,7 +47,7 @@
     </header>
     <main>
       <form id="categories-action" action="movies.html">
-        <div class="container">
+        <div id="categories-img" class="container">
           <div class="row">
             <div class="col">
               <button type="button" class="category-btn" value="1"><img class="category-img" src="./assets/arte.svg" alt="arte"></button>
@@ -58,8 +58,8 @@
               <h4>Ciencia y Matemáticas</h4>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
+          <div id="general-row" class="row">
+            <div id="general-img" class="col">
               <button type="button" class="category-btn" value="3"><img class="category-img" src="./assets/general.svg" alt="general"></button>
               <h4>General</h4>
             </div>
@@ -77,7 +77,68 @@
         </div>
       </form>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="fluid-container">
+          <div class="footer-row row text-center d-flex justify-content-center pt-5 mb-3">
+  
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="modal-title">
+                <a data-toggle="modal" data-target="#exampleModalCenter" role="button" href="#!">Recursos para padres</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="modal-title">
+                <a data-toggle="modal" data-target="#exampleModalCenter2" role="button" href="#!">Más contenido kids</a>
+              </h6>
+            </div>
+          </div>
+        </div>
+          
+        <!-- Modal 1 -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Padres</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 2 -->
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Hijos</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

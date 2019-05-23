@@ -1,35 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
 div#button3 {
     position: absolute;
-    left: 15%;
-    right: 0;
-    top: 35%;
+    left: 5%;
+    top: 24%;
+    z-index: 1;
     margin: 0 auto;
-    z-index: 9999999;
 }
 div#button6 {
     position: absolute;
-    left: 85%;
+    left: 70%;
     right: 0;
-    top: 35%;
+    top: 24%;
+    z-index: 1;
     margin: 0 auto;
-    z-index: 9999999;
+}
+div.carousel-item {
+    height: 250px;
+    z-index: -20;
 }
 button.age-btn {
     padding: 50px;
     border-radius: 60px;
 }
-img#img-to-style {
+div.movie-card {
+    padding: 10px;
+    text-align: center;
+}
+div.movie-box {
+    text-align: center;
+}
+div.movie-title-card {
+    text-align: center;
+}
+div#boxes-row {
+    margin: 0;
+}
+img.img-to-style {
     border-radius: 200px;
-    padding: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+}
+div.movie-img {
+    text-align: center !important;
+    padding: 0;
 }
 button.category-btn {
     background-color: palevioletred;
-    padding: 50px;
+    margin-top: 25px;
+    padding: 30px;
     border-radius: 60%;
 }
-img.category-img {
-    width: 100px;
+div#general-img {
+    margin-top: -80px;
+    text-align: center;
+    margin-bottom: -80px;
 }
-div.carousel-item {
-    height: 250px;
+img.category-img {
+    width: 80px;
+    height: 80px;
+}
+div#categories-img {
+    text-align: center;
+}
+div.footer-row {
+    padding-top: 20px !important;
+    margin-bottom: 0 !important;
+}
+h6.modal-title {
+    text-align: center;
+    color: blue;
+}
+@media screen and (max-width: 980px) {
+    img.img-to-style {
+        width: 200px;
+        height: 200px;
+    }
+    div#general-img {
+        margin-top: 0px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    div.carousel-item {
+        margin-top: 15px;
+        height: 180px;
+        z-index: -5;
+    }
+    button.age-btn {
+        padding: 20px;
+        border-radius: 60px;
+    }
+    div#button3 {
+        position: absolute;
+        left: 15%;
+        top: 10%;
+        margin: 0 auto;
+    }
+    div#button6 {
+        position: absolute;
+        left: 45%;
+        right: 0;
+        top: 10%;
+        margin: 0 auto;
+    }
 }
