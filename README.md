@@ -155,7 +155,7 @@ Las FE desarrollaron lógica de funciones e implementación del DOM, en conjunto
 
 ## Futuras Iteraciones
 
-Para futuras mejoras de nuestro producto, deseamos implementar un modal por pelicula con información detallada.
+Para futuras mejoras de nuestro producto, deseamos implementar un modal por película con información detallada.
 
 Desarrollar testeo de usuario con mapa de calor.
 
