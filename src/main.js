@@ -50,6 +50,7 @@ let showMovies = (arr) => {
     });
   })
 }
+let home = document.getElementById("logo");
 let indexPage = document.getElementById("index-page");
 if (indexPage != null) {
   localStorage.setItem("age", 6)
@@ -81,6 +82,15 @@ if (categoriesPage != null) {
   })
 }
 
+let navCategories = document.querySelectorAll(".elecction-btn");
+navCategories.forEach(element => {
+  element.addEventListener("click", () => {
+    localStorage.removeItem("category")
+    localStorage.setItem("category", element.getAttribute("value"));
+    document.getElementById("nav-action").submit();
+  })
+})
+
 let moviesPage = document.getElementById("movies-page");
 if (moviesPage != null) {
   let categoryTitle = document.getElementById("category-title")
@@ -105,5 +115,4 @@ if (moviesPage != null) {
   }
   categoryTitle.innerHTML = categoryTitleText
   showMovies(window.logic.filterByCategory(window.logic.filterByAge(movies, localStorage.age), localStorage.category))
-
 }
