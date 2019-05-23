@@ -19,6 +19,14 @@ div#button6 {
     z-index: 1;
     margin: 0 auto;
 }
+button#age-3-btn {
+    color: #ffffff;
+    background-color: #cda7e1;
+}
+button#age-6-btn {
+    color: #ffffff;
+    background-color: #35beab;
+}
 div.carousel-item {
     height: 250px;
     z-index: -20;
