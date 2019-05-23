@@ -1,7 +1,7 @@
-### HACKATHON SQUAD 7
+
  # EduKids
 
-## Investigacion de Usuario
+### Investigacion de Usuario
 
 # Research
 
@@ -120,9 +120,39 @@ Nuestras conclusiones después de la primera iteración de diseño fueron las si
 
 [Test de nuestro prototipo de baja fidelidad](https://www.youtube.com/watch?v=WkYLFteWyO0&feature=youtu.be)
 
-## Figma
+# Guía de Estilos
+
+![Guía de estilos](./src/img/guiadeestilos.png)
+
+# Figma
 
 Mobile First
+
+![prototipo en figma](./src/img/figma-mb.png)
+
+La version desktop del prototipado se realizo con las mejoras que se detectaron despues del primer testeo con usuarios.
+
+![version prototipo desktop]()
+
+[Ve nuestro figma](https://www.figma.com/file/ejqGH8hR1BIJ445QlBelb1Xc/EduKids?node-id=9%3A3)
+
+
+# Flujo de Usuario
+
+Presentamos un esquema general del flujo que deberia tener un usuario al recorrer nuestra aplicación
+
+![esquema de nuestro flujo de usuario](./src/img/flujodeusuario.png)
+
+# Historias de Usuario
+
+![imagen de historias de usuario](./src/img/historiasusuarios.png)
+
+## Organización de Nuestro Trabajo
+
+Como herramienta principal de organización y visualización de avance ultizamos Trello.
+
+[En este enlace encontrarás nuestro Trello](https://trello.com/b/WNR9WCfJ/hackathon-squad-7)
+
 
 
 
