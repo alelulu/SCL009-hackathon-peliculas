@@ -12,17 +12,14 @@ window.logic = {
   //Function to filter by age
   filterByAge: (arr, age) => {
     let ageArray = [];
-    
     ageArray = arr.filter(element => {
       return element.age <= age;
     })
-    
     return ageArray
   },
   
   //Function to filter by category
   filterByCategory: (arr, category) => {
-    console.log(arr)
     if (category == 3) { //Para categoría general se devuelve array completo
       return arr
     }
@@ -142,7 +139,7 @@ window.MOVIES = MOVIES
 
 
 //Array of categories with its definition
-const CATEGORIES = {
+/*const CATEGORIES = {
   "categories": [
     {
       "id": 1,
@@ -166,4 +163,4 @@ const CATEGORIES = {
       "description": "Promueve la colaboración, el respeto , mejora habilidades motoras , ayuda al niño a superar la timidez, cumplir normas junto con  forjar valores para su presente y futuro "
     }
   ]
-}   
+}   */

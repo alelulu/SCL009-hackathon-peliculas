@@ -1,7 +1,5 @@
 const movies = window.MOVIES.movies
 let showMovies = (arr) => {
-  console.log(arr)
-  //element de mi array
   arr.forEach(element => {
     let link = window.logic.createLink(element.id)
     fetch(link)
@@ -9,12 +7,10 @@ let showMovies = (arr) => {
       return response.json();
     })
     .then((data) => {
-      //el objeto de la api
-      console.log(data)
       let movieBoxes = document.getElementById("boxes");
       movieBoxes.classList.add("row");
 
-      movieCard = document.createElement("div");
+      let movieCard = document.createElement("div");
      
       movieCard.classList.add("movie-card")
       movieCard.classList.add("col-sm-12");
