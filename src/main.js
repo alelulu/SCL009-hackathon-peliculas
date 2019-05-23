@@ -90,23 +90,23 @@ if (moviesPage != null) {
   let categoryTitle = document.getElementById("category-title")
   let categoryTitleText = " "
   if (localStorage.category == 1) {
-    categoryTitleText = "el arte es lindo"
+    categoryTitleText = "ARTE! Fomenta la actividad creativa y transformadora en tus niños! "
   }
   else if (localStorage.category == 2) {
-    categoryTitleText = "la ciencia es linda"
+    categoryTitleText = "CIENCIAS! Aprende lo divertidas y atractivas que son las ciencias!"
   }
   else if (localStorage.category == 3) {
-    categoryTitleText = "generalll"
+    categoryTitleText = "GENERAL! Es hora de diversión!"
   }
   else if (localStorage.category == 4) {
-    categoryTitleText = "lenguaje e ingléees"
+    categoryTitleText = "LENGUAJE E INGLES! Mejora habilidades en su comunicación de forma didáctiva y entretenida "
   }
   else if (localStorage.category == 5) {
-    categoryTitleText = "socioemocional habilidades importantes"
+    categoryTitleText = "SOCIOEMOCIONAL! Fomenta valores en tus niños de una manera divertida"
   }
   else {
-    categoryTitleText = "hola"
-  }
+    categoryTitleText = "hola" 
+    }
   categoryTitle.innerHTML = categoryTitleText
   showMovies(window.logic.filterByCategory(window.logic.filterByAge(movies, localStorage.age), localStorage.category))
 
